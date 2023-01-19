@@ -58,6 +58,8 @@ public class Gun : MonoBehaviour
     public GameObject muzzleFlash2;
     public AudioSource audioSourceShot;
     public AudioClip gunFire;
+    public AudioClip targetHit;
+    public GameObject addPointsUI;
     void Shoot()
     {
         mAnimator = gun.GetComponent<Animator>();
@@ -68,7 +70,7 @@ public class Gun : MonoBehaviour
         StartCoroutine("muzzleFlashOff");
         RaycastHit hit;
         Ray ray = fpscam.ScreenPointToRay(Input.mousePosition);
-        ///Debug.DrawRay(transform.position, transform.forward * 100, Color.red);
+        //Debug.DrawRay(transform.position, transform.forward, Color.red);
         if (Physics.Raycast(ray, out hit, 300))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
@@ -79,9 +81,17 @@ public class Gun : MonoBehaviour
             if (target != null)
             {
                 target.Die();
+                audioSourceShot.PlayOneShot(targetHit);
+                addPointsUI.SetActive(true);
+                StartCoroutine("removeAddPointsUI");
             }
             StartCoroutine("removeImpactEffect");
         }
+    }
+    IEnumerator removeAddPointsUI()
+    {
+        yield return new WaitForSeconds(0.4f);
+        addPointsUI.SetActive(false);
     }
     IEnumerator removeImpactEffect()
     {
