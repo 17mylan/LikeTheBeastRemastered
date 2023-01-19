@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     public GameObject Settings;
     public AudioSource audioSource;
     public AudioClip ClickedButton;
+    public PauseMenu pauseMenu;
     public string Url;
     public void ButtonClick(string _String)
     {
@@ -39,7 +40,18 @@ public class MenuManager : MonoBehaviour
         {
             PatchNote.SetActive(true);
             Settings.SetActive(false);
-            //audiosourceplay
+        }
+        if(_String == "returnmenu")
+        {
+            SceneManager.LoadScene("Main");
+        }
+        if (_String == "resume")
+        {
+            pauseMenu.Resume();
+        }
+        if (_String == "restart")
+        {
+            SceneManager.LoadScene("jeu");
         }
     }
     public void OnTriggerEnter(Collider other)

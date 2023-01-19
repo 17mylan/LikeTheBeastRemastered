@@ -773,6 +773,7 @@ MonoBehaviour:
   Settings: {fileID: 0}
   audioSource: {fileID: 0}
   ClickedButton: {fileID: 0}
+  pauseMenu: {fileID: 0}
   Url: https://view.genial.ly/63501824d51f8800115bb1a0/personal-branding-portfolio-desboise
 --- !u!114 &174592586
 MonoBehaviour:
@@ -939,7 +940,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1244,6 +1245,7 @@ MonoBehaviour:
   Settings: {fileID: 0}
   audioSource: {fileID: 0}
   ClickedButton: {fileID: 0}
+  pauseMenu: {fileID: 0}
   Url: https://cdn.me-qr.com/pdf/10328334.pdf
 --- !u!114 &354371901
 MonoBehaviour:
@@ -1410,7 +1412,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1767,7 +1769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Weapons uprade
+  m_text: Weapons uprgade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}
   m_sharedMaterial: {fileID: -6007100225061473820, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}
@@ -1902,7 +1904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music - General
+  m_text: Volume - General
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}
   m_sharedMaterial: {fileID: -6007100225061473820, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}
@@ -2741,7 +2743,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2922,7 +2924,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d41ea4133b0945c4d9e05bbb50d209d9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.03
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3294,7 +3296,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3589,6 +3591,7 @@ MonoBehaviour:
   Settings: {fileID: 100279949}
   audioSource: {fileID: 912314742}
   ClickedButton: {fileID: 8300000, guid: 1daa6a3f845024c4683d74e8cb6e9558, type: 3}
+  pauseMenu: {fileID: 0}
   Url: 
 --- !u!82 &912314742
 AudioSource:
@@ -3602,7 +3605,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1daa6a3f845024c4683d74e8cb6e9558, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5359,7 +5362,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5866,7 +5869,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6390,7 +6393,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6578,6 +6581,7 @@ MonoBehaviour:
   Settings: {fileID: 0}
   audioSource: {fileID: 0}
   ClickedButton: {fileID: 0}
+  pauseMenu: {fileID: 0}
   Url: https://express.adobe.com/page/K3GbAzis0WwpB/
 --- !u!114 &1605945166
 MonoBehaviour:
@@ -6744,7 +6748,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7036,7 +7040,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7611,6 +7615,7 @@ MonoBehaviour:
   Settings: {fileID: 0}
   audioSource: {fileID: 0}
   ClickedButton: {fileID: 0}
+  pauseMenu: {fileID: 0}
   Url: https://dematteismylan4.wixsite.com/mylan
 --- !u!114 &1872938803
 MonoBehaviour:
@@ -7777,7 +7782,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8169,6 +8174,7 @@ MonoBehaviour:
   Settings: {fileID: 0}
   audioSource: {fileID: 0}
   ClickedButton: {fileID: 0}
+  pauseMenu: {fileID: 0}
   Url: https://emilienmaeso.wixsite.com/website
 --- !u!82 &1902403152
 AudioSource:
@@ -8182,7 +8188,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5ba075e58eb50548856989a0a05db0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -41,17 +41,18 @@ public class Gun : MonoBehaviour
         Color.blue);
         mAnimator = gun.GetComponent<Animator>();
         mAnimator.SetBool("tir", false);
-
-        if (Input.GetButtonDown("Fire1"))
+        if (GameObject.Find("PauseMenu") == false)
         {
-            Shoot();
-        }
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
 
-        if (Input.GetKeyDown("g"))
-        {
-            ThrowGrenade();
+            if (Input.GetKeyDown("g"))
+            {
+                ThrowGrenade();
+            }
         }
-
     }
     public GameObject muzzleFlash;
     public GameObject muzzleFlash2;
