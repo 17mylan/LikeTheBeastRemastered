@@ -69,4 +69,11 @@ public class MenuManager : MonoBehaviour
     {
         Application.Quit();
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            SceneManager.LoadScene("Main");
+        }
+    }
 }
