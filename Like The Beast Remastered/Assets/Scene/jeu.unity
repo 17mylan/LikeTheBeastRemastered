@@ -10920,6 +10920,8 @@ MonoBehaviour:
   gunFire: {fileID: 0}
   targetHit: {fileID: 0}
   addPointsUI: {fileID: 0}
+  robotsKilled: 0
+  spidersKilled: 0
 --- !u!4 &314314526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5832895700162310117, guid: 08471f6c18f0d6a488516feb2fa56f0d, type: 3}
@@ -19313,6 +19315,120 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d733b4d6c65e55b4f8ca2a69e43c553b, type: 3}
+--- !u!1 &561478812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561478817}
+  - component: {fileID: 561478816}
+  - component: {fileID: 561478815}
+  - component: {fileID: 561478814}
+  - component: {fileID: 561478813}
+  m_Layer: 0
+  m_Name: Collider-EndGame (1)
+  m_TagString: Finish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!54 &561478813
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561478812}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &561478814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561478812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3089447, y: 4.6199064, z: 6.7583313}
+  m_Center: {x: -1.0224023, y: 1.8099498, z: 2.6022463}
+--- !u!23 &561478815
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561478812}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &561478816
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561478812}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &561478817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561478812}
+  m_LocalRotation: {x: 0, y: 0.68753076, z: 0, w: -0.7261553}
+  m_LocalPosition: {x: 2.9, y: 4.867775, z: 23.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &563241420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f14b0334aae97d14794d73b8dafa3ed4, type: 3}
@@ -19802,6 +19918,8 @@ MonoBehaviour:
   gunFire: {fileID: 0}
   targetHit: {fileID: 0}
   addPointsUI: {fileID: 0}
+  robotsKilled: 0
+  spidersKilled: 0
 --- !u!95 &575263013
 Animator:
   serializedVersion: 4
@@ -33329,6 +33447,8 @@ MonoBehaviour:
   gunFire: {fileID: 8300000, guid: 0e28f30b5a7d7fb4e909c1730db36323, type: 3}
   targetHit: {fileID: 8300000, guid: 3f5d3edfa323db64b93bd720a09a51dc, type: 3}
   addPointsUI: {fileID: 543329639}
+  robotsKilled: 0
+  spidersKilled: 0
 --- !u!82 &963194232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65349,6 +65469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 1758514394}
+  lastGameScore: {fileID: 0}
+  robotsCounter: {fileID: 0}
+  spidersCounter: {fileID: 0}
   points: 0
 --- !u!1001 &1759170140
 PrefabInstance:

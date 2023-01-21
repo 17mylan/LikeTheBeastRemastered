@@ -24,7 +24,9 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
-        //Cursor.SetCursor(curseur, Vector2.zero, CursorMode.Auto);
+        PlayerPrefs.SetFloat("LastGameScore", 0);
+        PlayerPrefs.SetInt("lastGameRobotsKilled", 0);
+        PlayerPrefs.SetInt("lastGameSpidersKilled", 0);
     }
 
     void Update()
@@ -60,6 +62,9 @@ public class Gun : MonoBehaviour
     public AudioClip gunFire;
     public AudioClip targetHit;
     public GameObject addPointsUI;
+
+    public int robotsKilled;
+    public int spidersKilled;
     void Shoot()
     {
         mAnimator = gun.GetComponent<Animator>();
@@ -81,6 +86,16 @@ public class Gun : MonoBehaviour
             if (target != null)
             {
                 target.Die();
+                if (target.tag == "robots")
+                {
+                    robotsKilled++;
+                    PlayerPrefs.SetInt("lastGameRobotsKilled", robotsKilled);
+                }
+                else if(target.tag == "spiders")
+                {
+                    spidersKilled++;
+                    PlayerPrefs.SetInt("lastGameSpidersKilled", spidersKilled);
+                }
                 audioSourceShot.PlayOneShot(targetHit);
                 addPointsUI.SetActive(true);
                 StartCoroutine("removeAddPointsUI");

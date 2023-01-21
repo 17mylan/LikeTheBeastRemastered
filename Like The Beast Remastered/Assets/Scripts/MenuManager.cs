@@ -58,7 +58,7 @@ public class MenuManager : MonoBehaviour
     {
         if(other.tag == "Finish")
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("ScoreScene");
         }
     }
     public void Open()
@@ -68,12 +68,5 @@ public class MenuManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.F))
-        {
-            SceneManager.LoadScene("Main");
-        }
     }
 }
