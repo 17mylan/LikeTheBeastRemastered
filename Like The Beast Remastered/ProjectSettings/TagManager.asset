@@ -6,6 +6,7 @@ TagManager:
   tags:
   - robots
   - spiders
+  - bullet
   layers:
   - Default
   - TransparentFX

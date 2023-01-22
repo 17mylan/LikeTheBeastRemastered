@@ -99,8 +99,8 @@ public class Gun : MonoBehaviour
                 audioSourceShot.PlayOneShot(targetHit);
                 addPointsUI.SetActive(true);
                 StartCoroutine("removeAddPointsUI");
+                StartCoroutine("removeImpactEffect");
             }
-            StartCoroutine("removeImpactEffect");
         }
     }
     IEnumerator removeAddPointsUI()
@@ -119,7 +119,6 @@ public class Gun : MonoBehaviour
         muzzleFlash.SetActive(false);
         muzzleFlash2.SetActive(false);
     }
-
     void ThrowGrenade()
     {
         ///RaycastHit hit;
@@ -130,7 +129,6 @@ public class Gun : MonoBehaviour
         GameObject grenade = Instantiate(grenadePrefab, transform.position, transform.rotation);
         Rigidbody rb = grenade.GetComponent<Rigidbody>();
         rb.AddForce((mousePos - transform.position) / 3, ForceMode.VelocityChange);
-
     }
-
+    
 }

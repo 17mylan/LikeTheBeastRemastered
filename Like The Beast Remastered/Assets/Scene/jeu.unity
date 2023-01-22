@@ -19887,39 +19887,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 498591ad94cb92f41afce2a58f64b539, type: 3}
   m_PrefabInstance: {fileID: 1625637564}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &575263012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575263010}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7eaef7a45f0a84d98d402bfff6592e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  curseur: {fileID: 0}
-  fpscam: {fileID: 963194227}
-  Flash: {fileID: 1810997981}
-  impactEffect: {fileID: 1239717334}
-  gun: {fileID: 575263010}
-  throwForce: 40
-  plasmabullet: 4
-  grenadePrefab: {fileID: 204757801762272309, guid: ccd1032831ae3e849b94d5651e2f80a3, type: 3}
-  PlasmaBall: {fileID: 3000079223674842720, guid: 811be36805769ff469b6a7387199d7fe, type: 3}
-  cible: {fileID: 0}
-  mAnimator: {fileID: 0}
-  muzzleFlash: {fileID: 0}
-  muzzleFlash2: {fileID: 0}
-  audioSourceShot: {fileID: 0}
-  gunFire: {fileID: 0}
-  targetHit: {fileID: 0}
-  addPointsUI: {fileID: 0}
-  robotsKilled: 0
-  spidersKilled: 0
 --- !u!95 &575263013
 Animator:
   serializedVersion: 4
@@ -19940,6 +19907,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &575263016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575263010}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a4c50a813173641bd60d004b6aa7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &577464601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bdd7f94dd3ed9fb45b426c7317f1b7e6, type: 3}
@@ -33319,7 +33298,6 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194233}
   - component: {fileID: 963194236}
   - component: {fileID: 963194232}
   - component: {fileID: 963194234}
@@ -33545,18 +33523,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &963194233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9acdcfd2f1649774b90f723161d3ccc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &963194234
 AudioSource:
   m_ObjectHideFlags: 0

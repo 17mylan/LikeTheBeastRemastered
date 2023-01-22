@@ -40,11 +40,11 @@ public class Kill : MonoBehaviour
             score.points += 50;
         }
     }
-    public GameObject robots;
     public void Die()
     {
         score.points = score.points + 50;
         PlayerPrefs.SetFloat("LastGameScore", score.points);
         Destroy(gameObject);
+        DestroyImmediate(GameObject.Find("Sphere(Clone)"), true);
     }
 }

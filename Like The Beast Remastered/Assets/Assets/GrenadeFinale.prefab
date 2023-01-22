@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acdcfd2f1649774b90f723161d3ccc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Camera: {fileID: 0}
+  shake: 3
+  shakeAmount: 5
+  decreaseFactor: 7
 --- !u!1 &1566689574012837436
 GameObject:
   m_ObjectHideFlags: 0
