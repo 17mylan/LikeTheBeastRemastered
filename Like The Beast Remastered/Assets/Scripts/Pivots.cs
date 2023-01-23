@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Pivots : MonoBehaviour
 {
+    private Vector3 aim;
     private void Update()
     {
-        transform.rotation = Quaternion.Euler(Input.mousePosition);
+        if (GameObject.Find("PauseMenu") == false)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            mousePos += Camera.main.transform.forward * 1f;
+            aim = Camera.main.ScreenToWorldPoint(mousePos) + (Camera.main.transform.forward * 1);
+            transform.LookAt(aim);
+        }
     }
 }

@@ -29,6 +29,7 @@ public class grenade : MonoBehaviour
     }
     void Explode()
     {
+        cameraShake.Invoke("shake", 0.3f);
         Instantiate(explosionEffect, transform.position, transform.rotation);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
@@ -46,7 +47,6 @@ public class grenade : MonoBehaviour
                 dest.casser();
             }
         }
-        StartCoroutine(cameraShake.Shake(2f, 2f));
         Destroy(gameObject);
     }
 }

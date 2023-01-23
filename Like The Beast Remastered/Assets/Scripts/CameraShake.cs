@@ -2,9 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraShake : MonoBehaviour
 {
+    CinemachineImpulseSource impulse;
+    public void Start()
+    {
+        impulse = transform.GetComponent<CinemachineImpulseSource>();
+    }
+    public void shake()
+    {
+        impulse.GenerateImpulse();
+    }
     public IEnumerator Shake(float duration, float magnitude)
     {
         transform.localPosition = GameObject.Find("Main Camera").GetComponent<Transform>().localPosition;

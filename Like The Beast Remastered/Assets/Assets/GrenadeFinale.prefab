@@ -85,8 +85,6 @@ MonoBehaviour:
   radius: 12
   force: 1200
   cameraShake: {fileID: 7422755674093347389}
-  audioSource: {fileID: 3622280636240348660}
-  grenadeExplosion: {fileID: 8300000, guid: 3f0c891033ab3c945ba2ee4d5c7ccf52, type: 3}
 --- !u!114 &7422755674093347389
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -74,8 +74,11 @@ public class Gun : MonoBehaviour
     public int spidersKilled;
     public int allRobotsKilled;
     public int allSpidersKilled;
+    public CameraShake cameraShake;
+
     void Shoot()
     {
+        cameraShake.Invoke("shake", 0.3f);
         mAnimator = gun.GetComponent<Animator>();
         mAnimator.SetBool("tir", true);
         muzzleFlash.SetActive(true);
@@ -141,6 +144,7 @@ public class Gun : MonoBehaviour
     }
     void Plasma()
     {
+        cameraShake.Invoke("shake", 0.3f);
         muzzleFlash2.SetActive(true);
         audioSourceShot.PlayOneShot(gunFire);
         StartCoroutine("muzzleFlashOff");
