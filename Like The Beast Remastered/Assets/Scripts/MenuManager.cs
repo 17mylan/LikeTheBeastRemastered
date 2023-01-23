@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject PatchNote;
+    public GameObject Quests;
     public GameObject Credits;
     public GameObject Settings;
     public AudioSource audioSource;
@@ -21,24 +22,24 @@ public class MenuManager : MonoBehaviour
         }
         if(_String == "credits")
         {
-            PatchNote.SetActive(false);
+            Quests.SetActive(false);
             Credits.SetActive(true);
             Settings.SetActive(false);
         }
         if (_String == "creditsback")
         {
-            PatchNote.SetActive(true);
+            Quests.SetActive(true);
             Credits.SetActive(false);
         }
         if (_String == "settings")
         {
-            PatchNote.SetActive(false);
+            Quests.SetActive(false);
             Settings.SetActive(true);
             Credits.SetActive(false);
         }
         if (_String == "settingsback")
         {
-            PatchNote.SetActive(true);
+            Quests.SetActive(true);
             Settings.SetActive(false);
         }
         if(_String == "returnmenu")
@@ -54,10 +55,16 @@ public class MenuManager : MonoBehaviour
             SceneManager.LoadScene("jeu");
         }
     }
+    public int allGameFinishedNumber;
     public void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Finish")
         {
+            if (PlayerPrefs.GetInt("allGameFinished") <= 4)
+            {
+                allGameFinishedNumber = PlayerPrefs.GetInt("allGameFinished") + 1;
+                PlayerPrefs.SetInt("allGameFinished", allGameFinishedNumber);
+            }
             SceneManager.LoadScene("ScoreScene");
         }
     }

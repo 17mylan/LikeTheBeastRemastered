@@ -27,7 +27,6 @@ public class grenade : MonoBehaviour
             hasExploded = true;
         }
     }
-
     void Explode()
     {
         Instantiate(explosionEffect, transform.position, transform.rotation);

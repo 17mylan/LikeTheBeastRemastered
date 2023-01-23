@@ -47,7 +47,14 @@ public class Gun : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                Shoot();
+                if (GameObject.Find("gun") == true)
+                {
+                    Shoot();
+                }
+                else if (GameObject.Find("gun2") == true)
+                {
+                    Plasma();
+                }
             }
 
             if (Input.GetKeyDown("g"))
@@ -65,12 +72,13 @@ public class Gun : MonoBehaviour
 
     public int robotsKilled;
     public int spidersKilled;
+    public int allRobotsKilled;
+    public int allSpidersKilled;
     void Shoot()
     {
         mAnimator = gun.GetComponent<Animator>();
         mAnimator.SetBool("tir", true);
         muzzleFlash.SetActive(true);
-        muzzleFlash2.SetActive(true);
         audioSourceShot.PlayOneShot(gunFire);
         StartCoroutine("muzzleFlashOff");
         RaycastHit hit;
@@ -88,16 +96,26 @@ public class Gun : MonoBehaviour
                 target.Die();
                 if (target.tag == "robots")
                 {
+                    robotsKilled = PlayerPrefs.GetInt("lastGameRobotsKilled");
                     robotsKilled++;
                     PlayerPrefs.SetInt("lastGameRobotsKilled", robotsKilled);
+                    if(PlayerPrefs.GetInt("allRobotsKilled") <= 299)
+                    {
+                        allRobotsKilled = PlayerPrefs.GetInt("allRobotsKilled") + 1;
+                        PlayerPrefs.SetInt("allRobotsKilled", allRobotsKilled);
+                    }
                 }
-                else if(target.tag == "spiders")
+                else if (target.tag == "spiders")
                 {
+                    spidersKilled = PlayerPrefs.GetInt("lastGameSpidersKilled");
                     spidersKilled++;
                     PlayerPrefs.SetInt("lastGameSpidersKilled", spidersKilled);
+                    if (PlayerPrefs.GetInt("allSpidersKilled") <= 299)
+                    {
+                        allSpidersKilled = PlayerPrefs.GetInt("allSpidersKilled") + 1;
+                        PlayerPrefs.SetInt("allSpidersKilled", allSpidersKilled);
+                    }
                 }
-                audioSourceShot.PlayOneShot(targetHit);
-                addPointsUI.SetActive(true);
                 StartCoroutine("removeAddPointsUI");
                 StartCoroutine("removeImpactEffect");
             }
@@ -105,6 +123,8 @@ public class Gun : MonoBehaviour
     }
     IEnumerator removeAddPointsUI()
     {
+        addPointsUI.SetActive(true);
+        audioSourceShot.PlayOneShot(targetHit);
         yield return new WaitForSeconds(0.4f);
         addPointsUI.SetActive(false);
     }
@@ -119,6 +139,20 @@ public class Gun : MonoBehaviour
         muzzleFlash.SetActive(false);
         muzzleFlash2.SetActive(false);
     }
+    void Plasma()
+    {
+        muzzleFlash2.SetActive(true);
+        audioSourceShot.PlayOneShot(gunFire);
+        StartCoroutine("muzzleFlashOff");
+        mAnimator = gun.GetComponent<Animator>();
+        mAnimator.SetBool("tirr", true);
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = 100f;
+        mousePos = fpscam.ScreenToWorldPoint(mousePos);
+        GameObject PlasmaBal = Instantiate(PlasmaBall, transform.position, transform.rotation);
+        Rigidbody rb = PlasmaBal.GetComponent<Rigidbody>();
+        rb.AddForce((mousePos - transform.position) / 5, ForceMode.VelocityChange);
+    }
     void ThrowGrenade()
     {
         ///RaycastHit hit;
@@ -130,5 +164,4 @@ public class Gun : MonoBehaviour
         Rigidbody rb = grenade.GetComponent<Rigidbody>();
         rb.AddForce((mousePos - transform.position) / 3, ForceMode.VelocityChange);
     }
-    
 }
