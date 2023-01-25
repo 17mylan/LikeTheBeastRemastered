@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
@@ -16,11 +17,29 @@ public class Gun : MonoBehaviour
 
     public GameObject gun;
     public float throwForce = 40f;
-    public float plasmabullet = 4f;
     public GameObject grenadePrefab;
-    public GameObject PlasmaBall;
     public GameObject cible;
     public Animator mAnimator;
+
+    public GameObject muzzleFlash;
+    public AudioSource audioSourceShot;
+    public AudioClip gunFire;
+    public AudioClip targetHit;
+    public GameObject addPointsUI;
+
+    public int robotsKilled;
+    public int spidersKilled;
+    public int allRobotsKilled;
+    public int allSpidersKilled;
+    public CameraShake cameraShake;
+
+    public int ammoCount = 30;
+    public TextMeshProUGUI ammoCounter;
+    public GameObject reloadAnnonce;
+    public GameObject reloadPressAnnonce;
+
+    public bool isReloading = false;
+    public AudioClip weaponReloadingSong;
 
     private void Start()
     {
@@ -31,11 +50,6 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        ///Ray ray = fpscam.ScreenPointToRay(Input.mousePosition);
-        ///if (Physics.Raycast(ray, out RaycastHit raycastHit))
-        ///{
-        ///    transform.position = raycastHit.point;
-        ///}
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = 100f;
         mousePos = fpscam.ScreenToWorldPoint(mousePos);
@@ -49,11 +63,29 @@ public class Gun : MonoBehaviour
             {
                 if (GameObject.Find("gun") == true)
                 {
-                    Shoot();
-                }
-                else if (GameObject.Find("gun2") == true)
-                {
-                    Plasma();
+                    if (isReloading == false)
+                    {
+                        if(ammoCount >= 1)
+                        {
+                            Shoot();
+                            ammoCount = ammoCount - 1;
+                            ammoCounter.text = ammoCount.ToString();
+                            if(ammoCount < 11)
+                            {
+                                if(isReloading == false)
+                                {
+                                    reloadPressAnnonce.SetActive(true);
+                                }
+                            }
+                            if (ammoCount <= 0)
+                            {
+                                reloadPressAnnonce.SetActive(false);
+                                reloadAnnonce.SetActive(false);
+                                StartCoroutine("weaponReloading");
+                                isReloading = true;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -61,21 +93,28 @@ public class Gun : MonoBehaviour
             {
                 ThrowGrenade();
             }
+            if(Input.GetKeyDown("r"))
+            {
+                if(ammoCount < 30)
+                {
+                    isReloading = true;
+                    reloadPressAnnonce.SetActive(false);
+                    reloadAnnonce.SetActive(false);
+                    StartCoroutine("weaponReloading");
+                }
+            }
         }
     }
-    public GameObject muzzleFlash;
-    public GameObject muzzleFlash2;
-    public AudioSource audioSourceShot;
-    public AudioClip gunFire;
-    public AudioClip targetHit;
-    public GameObject addPointsUI;
-
-    public int robotsKilled;
-    public int spidersKilled;
-    public int allRobotsKilled;
-    public int allSpidersKilled;
-    public CameraShake cameraShake;
-
+    IEnumerator weaponReloading()
+    {
+        reloadAnnonce.SetActive(true);
+        audioSourceShot.PlayOneShot(weaponReloadingSong);
+        yield return new WaitForSeconds(2.3f);
+        ammoCount = 30;
+        reloadAnnonce.SetActive(false);
+        ammoCounter.text = ammoCount.ToString();
+        isReloading = false;
+    }
     void Shoot()
     {
         cameraShake.Invoke("shake", 0.3f);
@@ -90,9 +129,6 @@ public class Gun : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 300))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-
-
-
             Kill target = hit.transform.GetComponent<Kill>();
             if (target != null)
             {
@@ -140,22 +176,6 @@ public class Gun : MonoBehaviour
     {
         yield return new WaitForSeconds(.05f);
         muzzleFlash.SetActive(false);
-        muzzleFlash2.SetActive(false);
-    }
-    void Plasma()
-    {
-        cameraShake.Invoke("shake", 0.3f);
-        muzzleFlash2.SetActive(true);
-        audioSourceShot.PlayOneShot(gunFire);
-        StartCoroutine("muzzleFlashOff");
-        mAnimator = gun.GetComponent<Animator>();
-        mAnimator.SetBool("tirr", true);
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = 100f;
-        mousePos = fpscam.ScreenToWorldPoint(mousePos);
-        GameObject PlasmaBal = Instantiate(PlasmaBall, transform.position, transform.rotation);
-        Rigidbody rb = PlasmaBal.GetComponent<Rigidbody>();
-        rb.AddForce((mousePos - transform.position) / 5, ForceMode.VelocityChange);
     }
     void ThrowGrenade()
     {
