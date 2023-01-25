@@ -22585,7 +22585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9625209, y: 0.056}
   m_AnchorMax: {x: 0.96800005, y: 0.224}
-  m_AnchoredPosition: {x: -0.2999878, y: -0.27923584}
+  m_AnchoredPosition: {x: -0.30004883, y: -0.2791748}
   m_SizeDelta: {x: -0.21169996, y: -0.36039734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629751125
@@ -22601,7 +22601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+  m_Color: {r: 0.10980393, g: 0.10980393, b: 0.10980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38716,6 +38716,8 @@ MonoBehaviour:
   uiAmmo3: {fileID: 1584172958}
   grenadeNumber: 10
   grenadeCount: {fileID: 1419995933}
+  bulletPrefab: {fileID: 3000079223674842720, guid: 811be36805769ff469b6a7387199d7fe, type: 3}
+  bulletSpeed: 69
 --- !u!82 &963194232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67362,7 +67364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9625209, y: 0.23700002}
   m_AnchorMax: {x: 0.96800005, y: 0.32933256}
-  m_AnchoredPosition: {x: -0.2999878, y: 0.056671143}
+  m_AnchoredPosition: {x: -0.30004883, y: 0.05670166}
   m_SizeDelta: {x: -0.21169996, y: -2.0469055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772351528
@@ -67378,7 +67380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+  m_Color: {r: 0.1137255, g: 0.18039216, b: 0.050980397, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

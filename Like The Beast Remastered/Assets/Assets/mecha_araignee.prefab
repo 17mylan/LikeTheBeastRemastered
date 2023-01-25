@@ -118,8 +118,11 @@ MonoBehaviour:
   delay: 2
   timer: 0
   score: {fileID: 0}
-  killSound: {fileID: 0}
-  grenadeKillSound: {fileID: 8300000, guid: 3f0c891033ab3c945ba2ee4d5c7ccf52, type: 3}
+  robotsKilled: 0
+  spidersKilled: 0
+  allRobotsKilled: 0
+  allSpidersKilled: 0
+  allTimeScore: 0
 --- !u!54 &1874982076
 Rigidbody:
   m_ObjectHideFlags: 0
