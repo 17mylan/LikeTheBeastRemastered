@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    GameObject target;
-    public void Start()
+    public GameObject myObject;
+    public GameObject mySecondObject;
+    void Update()
     {
-        target = GameObject.Find("Main Camera");
-    }
-    public void Update()
-    {
-        //transform.LookAt(target.transform);
+        myObject.transform.rotation = Quaternion.Euler(myObject.transform.rotation.x, Camera.main.transform.rotation.y, myObject.transform.rotation.z);
     }
 }

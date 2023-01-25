@@ -15,7 +15,7 @@ public class CameraShake : MonoBehaviour
     {
         impulse.GenerateImpulse();
     }
-    public IEnumerator Shake(float duration, float magnitude)
+    /*public IEnumerator Shake(float duration, float magnitude)
     {
         transform.localPosition = GameObject.Find("Main Camera").GetComponent<Transform>().localPosition;
         Vector3 originalPos = transform.localPosition;
@@ -29,5 +29,5 @@ public class CameraShake : MonoBehaviour
             yield return null;
         }
         transform.localPosition = originalPos;
-    }
+    }*/
 }

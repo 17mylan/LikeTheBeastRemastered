@@ -11,7 +11,7 @@ public class Pivots : MonoBehaviour
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos += Camera.main.transform.forward * 1f;
-            aim = Camera.main.ScreenToWorldPoint(mousePos) + (Camera.main.transform.forward * 1);
+            aim = Camera.main.ScreenToWorldPoint(mousePos);
             transform.LookAt(aim);
         }
     }
