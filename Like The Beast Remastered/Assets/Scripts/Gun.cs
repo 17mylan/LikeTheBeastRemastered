@@ -48,6 +48,9 @@ public class Gun : MonoBehaviour
     public GameObject uiAmmo2;
     public GameObject uiAmmo3;
 
+    public int grenadeNumber = 10;
+    public TextMeshProUGUI grenadeCount;
+
     private void Start()
     {
         PlayerPrefs.SetFloat("LastGameScore", 0);
@@ -104,7 +107,12 @@ public class Gun : MonoBehaviour
 
             if (Input.GetKeyDown("g"))
             {
-                ThrowGrenade();
+                if(grenadeNumber >= 1)
+                {
+                    ThrowGrenade();
+                    grenadeNumber = grenadeNumber - 1;
+                    grenadeCount.text = grenadeNumber.ToString();
+                }
             }
             if(Input.GetKeyDown("r"))
             {
