@@ -4,23 +4,10 @@ using UnityEngine;
 
 public class Retical : MonoBehaviour
 {
-    public Texture2D cursorTexture;
-    public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
-
-    ///private void Start()
-    ///{
-    ///    Cursor.visible = false;
-    ///}
-
-
-    private void OnMouseEnter()
+    public Texture2D crosshair;
+    void Start()
     {
-        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-    }
-
-    private void OnMouseExit()
-    {
-        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+        Vector2 cursorOffset = new Vector2(crosshair.width / 2, crosshair.height / 2);
+        Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Auto);
     }
 }

@@ -1526,9 +1526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &46531151
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2417,9 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &71223450
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2666,9 +2662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &79282583
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3515,9 +3509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &95514727
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3628,9 +3620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &95576938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3914,9 +3904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &107379366
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4613,9 +4601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &129595401
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5950,9 +5936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &165387193
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6137,9 +6121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &175090377
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8497,9 +8479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &237105517
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8811,9 +8791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &248316202
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9166,9 +9144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &258349827
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11187,9 +11163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &321394449
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11369,9 +11343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &331808747
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12539,9 +12511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &366859301
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12981,9 +12951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &371329592
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13173,9 +13141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &376859515
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13926,7 +13892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3734792, y: 0.17366748}
   m_AnchorMax: {x: 0.625, y: 0.252}
-  m_AnchoredPosition: {x: 0.5000305, y: -0.2999878}
+  m_AnchoredPosition: {x: 0.5000305, y: -0.29992676}
   m_SizeDelta: {x: -0.8682022, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385364031
@@ -14255,9 +14221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &394785252
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16132,9 +16096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &455764855
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16420,9 +16382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &461411860
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17838,9 +17798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &505941646
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17961,9 +17919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &509523221
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18656,9 +18612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &533845206
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20415,9 +20369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &579169976
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21687,9 +21639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!1001 &606574742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22242,9 +22192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &617390472
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22635,9 +22583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &630424612
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22748,9 +22694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &631393838
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24532,9 +24476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &692902006
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28031,7 +27973,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799833062}
   serializedVersion: 8
-  lengthInSec: 0.6
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -28106,7 +28048,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.0001
+      scalar: 0.04
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -28159,7 +28101,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -28857,7 +28799,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -33947,9 +33889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &841760169
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34270,9 +34210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &845933413
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34811,9 +34749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &866476184
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35350,9 +35286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!4 &883031868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b43bc0634d6e3e24ca50d5653bc4e066, type: 3}
@@ -36210,9 +36144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &916125184
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37077,9 +37009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &943138547
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37190,9 +37120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &943489214
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37308,9 +37236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &943987585
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38269,9 +38195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &960307661
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38497,6 +38421,7 @@ GameObject:
   - component: {fileID: 963194240}
   - component: {fileID: 963194239}
   - component: {fileID: 963194241}
+  - component: {fileID: 963194242}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -38625,7 +38550,10 @@ MonoBehaviour:
   reloadAnnonce: {fileID: 385364028}
   reloadPressAnnonce: {fileID: 2141508717}
   isReloading: 0
-  weaponReloadingSong: {fileID: 8300000, guid: 389e441ba6d252943b2b2919a6bdf026, type: 3}
+  weaponReloadingSong: {fileID: 8300000, guid: f1fa31270f815fe4faeafcb73f941bf1, type: 3}
+  uiAmmo1: {fileID: 1307256646}
+  uiAmmo2: {fileID: 358317386}
+  uiAmmo3: {fileID: 1584172958}
 --- !u!82 &963194232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39218,6 +39146,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &963194242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: f3871dea0fe5dfa49afb8c5995e10a2c, type: 3}
 --- !u!4 &963493025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8896083617351793985, guid: 7d25eff4bc866dd4b880697b5573e602, type: 3}
@@ -39414,9 +39355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &965355543
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39736,9 +39675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &967942032
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41336,9 +41273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1025962632
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41602,9 +41537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1031611032
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41778,9 +41711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!4 &1035646518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5709797724221397829, guid: 4bc38ba923e97b44c95e548c8f440d08, type: 3}
@@ -44906,9 +44837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1128868600
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45501,9 +45430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1139668720
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46085,9 +46012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1157004888
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47055,9 +46980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1194412955
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48285,9 +48208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1226553587
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -50118,9 +50039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1302158283
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51875,9 +51794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1343583085
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52478,9 +52395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1370154279
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53683,9 +53598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!4 &1405213573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3359225927034675203, guid: 453a0963c52f22742b825865364f6be4, type: 3}
@@ -54216,9 +54129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1415915254
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55061,9 +54972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1436078371
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55830,9 +55739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1451769064
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56293,9 +56200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!4 &1459621394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908479140763290995, guid: dddcaf29673a10e4f99f707f047041aa, type: 3}
@@ -56348,9 +56253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1461895255
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58513,9 +58416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1515461083
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60890,9 +60791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1609813217
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62551,9 +62450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1646729897
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62669,9 +62566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1653305099
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63544,9 +63439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1671676061
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64276,9 +64169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1682063813
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64753,9 +64644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1695998408
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65480,9 +65369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1718827469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65769,9 +65656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1730237514
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65882,9 +65767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1732447754
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66901,9 +66784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1767620902
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67730,9 +67611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1790069520
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68519,9 +68398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1815548093
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69513,9 +69390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1844679103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70357,9 +70232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1862897418
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71968,9 +71841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1916518863
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -72081,9 +71952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1917446407
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -73409,9 +73278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &1942470619
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -76373,9 +76240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &2033606877
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -77099,9 +76964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205c2962ad107914b9853aa0b755e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
+  crosshair: {fileID: 0}
 --- !u!135 &2047552925
 SphereCollider:
   m_ObjectHideFlags: 0

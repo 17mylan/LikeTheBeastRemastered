@@ -41,6 +41,10 @@ public class Gun : MonoBehaviour
     public bool isReloading = false;
     public AudioClip weaponReloadingSong;
 
+    public GameObject uiAmmo1;
+    public GameObject uiAmmo2;
+    public GameObject uiAmmo3;
+
     private void Start()
     {
         PlayerPrefs.SetFloat("LastGameScore", 0);
@@ -70,16 +74,22 @@ public class Gun : MonoBehaviour
                             Shoot();
                             ammoCount = ammoCount - 1;
                             ammoCounter.text = ammoCount.ToString();
+                            if(ammoCount <= 20)
+                            {
+                                uiAmmo1.SetActive(false);
+                            }
                             if(ammoCount < 11)
                             {
                                 if(isReloading == false)
                                 {
                                     reloadPressAnnonce.SetActive(true);
+                                    uiAmmo2.SetActive(false);
                                 }
                             }
                             if (ammoCount <= 0)
                             {
                                 reloadPressAnnonce.SetActive(false);
+                                uiAmmo3.SetActive(false);
                                 reloadAnnonce.SetActive(false);
                                 StartCoroutine("weaponReloading");
                                 isReloading = true;
@@ -110,6 +120,9 @@ public class Gun : MonoBehaviour
         reloadAnnonce.SetActive(true);
         audioSourceShot.PlayOneShot(weaponReloadingSong);
         yield return new WaitForSeconds(2.3f);
+        uiAmmo1.SetActive(true);
+        uiAmmo2.SetActive(true);
+        uiAmmo3.SetActive(true);
         ammoCount = 30;
         reloadAnnonce.SetActive(false);
         ammoCounter.text = ammoCount.ToString();
