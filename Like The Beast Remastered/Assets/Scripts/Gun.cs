@@ -39,7 +39,10 @@ public class Gun : MonoBehaviour
     public GameObject reloadPressAnnonce;
 
     public bool isReloading = false;
+    public AudioSource weaponReloadSource;
     public AudioClip weaponReloadingSong;
+    public AudioSource weapon;
+    public AudioClip weaponLowAmmo;
 
     public GameObject uiAmmo1;
     public GameObject uiAmmo2;
@@ -105,12 +108,15 @@ public class Gun : MonoBehaviour
             }
             if(Input.GetKeyDown("r"))
             {
-                if(ammoCount < 30)
+                if (isReloading == false)
                 {
-                    isReloading = true;
-                    reloadPressAnnonce.SetActive(false);
-                    reloadAnnonce.SetActive(false);
-                    StartCoroutine("weaponReloading");
+                    if(ammoCount < 30)
+                    {
+                        isReloading = true;
+                        reloadPressAnnonce.SetActive(false);
+                        reloadAnnonce.SetActive(false);
+                        StartCoroutine("weaponReloading");
+                    }
                 }
             }
         }
@@ -118,7 +124,7 @@ public class Gun : MonoBehaviour
     IEnumerator weaponReloading()
     {
         reloadAnnonce.SetActive(true);
-        audioSourceShot.PlayOneShot(weaponReloadingSong);
+        weaponReloadSource.PlayOneShot(weaponReloadingSong);
         yield return new WaitForSeconds(2.3f);
         uiAmmo1.SetActive(true);
         uiAmmo2.SetActive(true);
@@ -130,11 +136,18 @@ public class Gun : MonoBehaviour
     }
     void Shoot()
     {
+        if(ammoCount > 10)
+        {
+            audioSourceShot.PlayOneShot(gunFire);
+        }
+        else if(ammoCount <= 10)
+        {
+            weapon.PlayOneShot(weaponLowAmmo);
+        }
         cameraShake.Invoke("shake", 0.3f);
         mAnimator = gun.GetComponent<Animator>();
         mAnimator.SetBool("tir", true);
         muzzleFlash.SetActive(true);
-        audioSourceShot.PlayOneShot(gunFire);
         StartCoroutine("muzzleFlashOff");
         RaycastHit hit;
         Ray ray = fpscam.ScreenPointToRay(Input.mousePosition);
