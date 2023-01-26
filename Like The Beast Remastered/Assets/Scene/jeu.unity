@@ -38716,8 +38716,8 @@ MonoBehaviour:
   uiAmmo3: {fileID: 1584172958}
   grenadeNumber: 10
   grenadeCount: {fileID: 1419995933}
-  bulletPrefab: {fileID: 3000079223674842720, guid: 811be36805769ff469b6a7387199d7fe, type: 3}
-  bulletSpeed: 69
+  shootNumber: 0
+  shootTouch: 0
 --- !u!82 &963194232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -66711,6 +66711,8 @@ MonoBehaviour:
   lastGameScore: {fileID: 0}
   robotsCounter: {fileID: 0}
   spidersCounter: {fileID: 0}
+  shotAccuracy: {fileID: 0}
+  pourcentage: 0
   points: 0
 --- !u!1001 &1759170140
 PrefabInstance:

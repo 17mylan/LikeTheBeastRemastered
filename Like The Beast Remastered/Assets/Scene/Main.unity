@@ -3030,11 +3030,11 @@ MonoBehaviour:
     "G" to throw grenades
 
 
-    Use mouse wheel to change weapon
+    Use "R" to reload your weapon
 
 
-    The goal is
-    to do the best score'
+    The goal is to
+    do the best score'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}
   m_sharedMaterial: {fileID: -6007100225061473820, guid: e817ff0263ef04942bc855ecc88306ec, type: 2}

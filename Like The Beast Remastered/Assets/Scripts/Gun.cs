@@ -51,11 +51,19 @@ public class Gun : MonoBehaviour
     public int grenadeNumber = 10;
     public TextMeshProUGUI grenadeCount;
 
+
+    public float shootNumber = 0;
+    public float shootTouch = 0;
+
+
     private void Start()
     {
         PlayerPrefs.SetFloat("LastGameScore", 0);
         PlayerPrefs.SetInt("lastGameRobotsKilled", 0);
         PlayerPrefs.SetInt("lastGameSpidersKilled", 0);
+
+        PlayerPrefs.SetFloat("lastGameShootFired", 0);
+        PlayerPrefs.SetFloat("lastGameShootTouched", 0);
     }
 
     void Update()
@@ -153,6 +161,10 @@ public class Gun : MonoBehaviour
             weapon.PlayOneShot(weaponLowAmmo);
         }
         cameraShake.Invoke("shake", 0.3f);
+
+        shootNumber++;
+        PlayerPrefs.SetFloat("lastGameShootFired", shootNumber);
+
         mAnimator = gun.GetComponent<Animator>();
         mAnimator.SetBool("tir", true);
         muzzleFlash.SetActive(true);
@@ -169,6 +181,11 @@ public class Gun : MonoBehaviour
                 target.Die();
                 if (target.tag == "robots")
                 {
+                    
+                    
+                    shootTouch++;
+                    PlayerPrefs.SetFloat("lastGameShootTouched", shootTouch);
+
                     robotsKilled = PlayerPrefs.GetInt("lastGameRobotsKilled");
                     robotsKilled++;
                     PlayerPrefs.SetInt("lastGameRobotsKilled", robotsKilled);
@@ -180,6 +197,10 @@ public class Gun : MonoBehaviour
                 }
                 else if (target.tag == "spiders")
                 {
+
+                    shootTouch++;
+                    PlayerPrefs.SetFloat("lastGameShootTouched", shootTouch);
+
                     spidersKilled = PlayerPrefs.GetInt("lastGameSpidersKilled");
                     spidersKilled++;
                     PlayerPrefs.SetInt("lastGameSpidersKilled", spidersKilled);
